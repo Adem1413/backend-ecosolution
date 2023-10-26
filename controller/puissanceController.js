@@ -61,10 +61,8 @@ const modifierPuissance = async (req, res) => {
         res.send(puissance);
     } catch (error) {
         console.log(error);
-        if (error instanceof mongoose.error.ValidationError) {
-            return res.sendStatus(404);
-        }
-        return res.sendStatus(502);
+       
+        
     }
 };
 
